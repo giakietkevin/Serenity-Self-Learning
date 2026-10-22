@@ -29,10 +29,10 @@ Xem [lessons/00-lo-trinh.md](lessons/00-lo-trinh.md).
 | # | Bài | Trạng thái |
 |---|---|---|
 | 01 | [Kiến trúc và cấu trúc một module](lessons/01-kien-truc-va-cau-truc-module.md) | ✅ |
-| 02 | Tạo bảng bằng FluentMigrator | ⏳ |
-| 03 | Sinh code bằng Sergen | ⏳ |
-| 04 | Tùy biến Grid, Form, Columns | ⏳ |
-| 05 | Lookup, Editor và quan hệ khóa ngoại | ⏳ |
-| 06 | Xử lý nghiệp vụ trong Repository (Save/List handler) | ⏳ |
-| 07 | Phân quyền (Permission) và Navigation | ⏳ |
-| 08 | Master–detail, bảng con trong dialog | ⏳ |
+| 02 | [Tạo bảng bằng FluentMigrator](lessons/02-fluentmigrator.md) | ✅ |
+| 03 | [Sinh code bằng Sergen](lessons/03-sergen.md) | ✅ |
+| 04 | [Tùy biến Grid, Form, Columns](lessons/04-tuy-bien-grid-form-columns.md) | ✅ |
+| 05 | [Enum, Lookup, Editor và khóa ngoại](lessons/05-lookup-editor-khoa-ngoai.md) | ✅ |
+| 06 | [Nghiệp vụ trong Repository (Request Handler)](lessons/06-nghiep-vu-trong-repository.md) | ✅ |
+| 07 | [Phân quyền (Permission) và Navigation](lessons/07-phan-quyen-va-navigation.md) | ✅ |
+| 08 | [Master–detail và quan hệ nhiều–nhiều](lessons/08-master-detail.md) | ✅ |
