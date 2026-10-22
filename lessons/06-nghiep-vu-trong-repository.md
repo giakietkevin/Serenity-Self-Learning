@@ -96,7 +96,7 @@ private class MySaveHandler : SaveRequestHandler<MyRow>
 - `ValidationError(errorCode, field, message)`: tham số thứ hai là tên field, nhờ vậy client tô đỏ đúng ô.
 - Ném exception thì **transaction rollback**, không có gì được lưu.
 - `UserRepository` của Serene là ví dụ đầy đủ nhất: kiểm tra username trùng, băm mật khẩu trong
-  `SetInternalFields`, và lưu role trong `AfterSave`.
+  `SetInternalFields`, và làm mới cache trong `AfterSave`.
 
 ## 3. Ví dụ List handler
 
@@ -191,9 +191,15 @@ bool exists = connection.Exists<MovieRow>(fld.GenreId == genreId);
 int count = connection.Count<MovieRow>(fld.Kind == 1);
 
 // Cập nhật, xóa hàng loạt
-new SqlUpdate(fld.TableName).Set(fld.Kind, 2).Where(fld.Year < 1950).Execute(connection);
-new SqlDelete(fld.TableName).Where(fld.Year < 1900).Execute(connection);
+new SqlUpdate(fld.TableName).Set(fld.Kind, 2).Where(fld.Year < 1950)
+    .Execute(connection, ExpectedRows.Ignore);
+new SqlDelete(fld.TableName).Where(fld.Year < 1900)
+    .Execute(connection, ExpectedRows.Ignore);
 ```
+
+> ⚠️ `Execute()` của `SqlUpdate`/`SqlDelete` mặc định là `ExpectedRows.One`: nếu số dòng bị ảnh hưởng
+> **khác 1** thì nó ném lỗi. Khi cập nhật hay xóa nhiều dòng (hoặc có thể 0 dòng), luôn truyền
+> `ExpectedRows.Ignore`.
 
 `UserRepository.MyDeleteHandler` dùng `SqlDelete` để xóa các bảng liên quan trong `OnBeforeDelete()`.
 

@@ -36,3 +36,10 @@ Xem [lessons/00-lo-trinh.md](lessons/00-lo-trinh.md).
 | 06 | [Nghiệp vụ trong Repository (Request Handler)](lessons/06-nghiep-vu-trong-repository.md) | ✅ |
 | 07 | [Phân quyền (Permission) và Navigation](lessons/07-phan-quyen-va-navigation.md) | ✅ |
 | 08 | [Master–detail và quan hệ nhiều–nhiều](lessons/08-master-detail.md) | ✅ |
+
+## Code mẫu và phân tích code
+
+- [samples/](samples/README.md): bộ code đầy đủ của module **MovieDB** (ví dụ xuyên suốt bài 02 tới 08), gồm
+  migration, Row, Repository, Endpoint, Form, Columns, Grid, Dialog, quyền và menu.
+- [walkthroughs/](walkthroughs/README.md): phân tích từng đoạn code thật trong Serene 3.13.7 (`ProductRow`,
+  `UserRepository`, `OrderGrid`/`OrderDialog`, master–detail Order) và của bộ code mẫu.

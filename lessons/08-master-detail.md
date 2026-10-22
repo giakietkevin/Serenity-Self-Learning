@@ -99,6 +99,9 @@ public RowListField<OrderDetailRow> DetailList;
 [MasterDetailRelation(foreignKey: "MovieId", IncludeColumns = "PersonFullname")]
 ```
 
+  Cách thứ hai là gắn `MinSelectLevel(SelectLevel.List)` lên view field trong Row con. Serene dùng cách
+  này cho `OrderDetailRow.ProductName`, nên `OrderRow.DetailList` không cần `IncludeColumns`.
+
 Trong Row con, field khóa ngoại về bảng cha thường để `Updatable(false)`, như trong `OrderDetailRow`:
 
 ```csharp
@@ -183,8 +186,10 @@ Bấm Save trên OrderDialog ──Update {Entity: {..., DetailList:[...]}}─�
         (cùng 1 transaction: lỗi ở đâu thì rollback toàn bộ)
 ```
 
-Các dòng mới có id tạm dạng `` `1 ``, `` `2 `` (do `GridEditorBase.getNextId()` tạo). Server biết đó là
-dòng mới cần INSERT.
+Grid con dùng một id **chỉ tồn tại ở client** là `__id` (giá trị dạng `` `1 ``, `` `2 ``, do
+`GridEditorBase.getNextId()` tạo) để phân biệt các dòng trong bộ nhớ. Trước khi gửi lên server, getter
+`value` của `GridEditorBase` xóa `__id` đi. Server dựa vào **id thật của bảng con** (`DetailID`): dòng
+nào chưa có `DetailID` thì INSERT, dòng nào có thì UPDATE, còn dòng cũ không còn trong danh sách thì DELETE.
 
 ## Phần C – Khi nào dùng cách nào
 
