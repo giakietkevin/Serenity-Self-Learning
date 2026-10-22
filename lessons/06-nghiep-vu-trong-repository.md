@@ -167,14 +167,25 @@ protected onViewSubmit() {
 var fld = MovieRow.Fields;
 
 query.Where(fld.Year >= 2000 & fld.Kind == (int)MovieKind.Film);   // AND
-query.Where(new Criteria(fld.Title).Contains("Lord") |
-            new Criteria(fld.Title).StartsWith("The"));            // OR
-query.Where(new Criteria(fld.GenreId).IsNull());
-query.Where(new Criteria(fld.MovieId).In(1, 2, 3));
-query.Where(new Criteria(fld.Title).Like("%ring%"));
+query.Where(fld.Title.Contains("Lord") | fld.Title.StartsWith("The"));   // OR
+query.Where(fld.GenreId.IsNull());
+query.Where(fld.MovieId.In(1, 2, 3));
+query.Where(fld.Title.Like("%ring%"));
+
+// Viết theo tên field (chuỗi) thì dùng new Criteria("...")
+query.Where(new Criteria("Year") >= 2000);
 ```
 
-Dùng `&` và `|` (một ký tự), **không phải** `&&` và `||`. Phép so sánh (`==`, `>=`...) viết thẳng trên field được, còn `Contains`, `StartsWith`, `Like`, `In`, `IsNull` thì phải bọc field trong `new Criteria(...)`.
+- Trong 3.13.7, field có sẵn các hàm `IsNull`, `IsNotNull`, `Like`, `StartsWith`, `EndsWith`, `Contains`,
+  `In`, `NotIn` (file `Field.CriteriaOperators.cs`) và các phép so sánh `==`, `!=`, `>`, `>=`, `<`, `<=`.
+  Viết `new Criteria(fld.Title).Contains(...)` cũng được, kết quả như nhau.
+- Kết hợp điều kiện bằng `&` / `|`. Viết `&&` / `||` cũng cho kết quả giống hệt, vì `BaseCriteria` định
+  nghĩa `operator true/false` luôn trả về `false` để C# không "đi tắt".
+- `In` nhận cả một danh sách: `fld.GenreId.In(listId)` với `listId` là `List<int>`.
+
+> ✏️ Bản trước của bài này ghi rằng `Contains`, `In`, `IsNull`... **bắt buộc** bọc trong `new Criteria(...)`
+> và không được dùng `&&`. Điều đó **sai**. Đã sửa lại sau khi đọc `Field.CriteriaOperators.cs` và
+> `BaseCriteria.cs` của bản 3.13.7.
 
 ## 5. Truy vấn trực tiếp ngoài handler
 

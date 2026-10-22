@@ -15,7 +15,23 @@ và một bài tập để tự làm trong project của mình.
 | 07 | Phân quyền và Navigation | `PermissionKeys`, `[ReadPermission]`, `NavigationItem` | `authentication/`, `handling_movie_navigation.md` |
 | 08 | Master–detail | Bảng con trong dialog (`MasterDetailRelation`, grid editor) | `the_cast_and_characters_they_played.md` |
 
-Sau bài 08, có thể học tiếp theo nhu cầu dự án: Localization, Multi-tenancy, upload file và Report.
+### Phần nâng cao (bổ sung sau khi rà soát lại theo Serenity Guide bản 3.x)
+
+| # | Bài | Nội dung chính | Tham khảo trong Guide cũ |
+|---|---|---|---|
+| 09 | Đa ngôn ngữ (Localization) | Local text key, file JSON bản dịch, trang Translations, dịch dữ liệu bằng `[LocalizationRow]` | `localization/`, `serene_tour/localization.md` |
+| 10 | Cache | `LocalCache`, `TwoLevelCache`, group key, khi nào phải tự làm mới cache | `caching/` |
+| 11 | Upload file và ảnh | `ImageUploadEditor`, `MultipleImageUploadEditor`, đường đi của file, cấu hình khi deploy | `adding_primary_and_gallery_images.md` |
+| 12 | Báo cáo, xuất Excel/PDF, nhập Excel | `ListExcel`, `[Report]`, wkhtmltopdf, `IDataOnlyReport`, import bằng EPPlus | Code mẫu trong Serene |
+| 13 | Tự viết Formatter, Editor, Filter | Formatter/editor TypeScript, cascade, custom `ListRequest`, cột checkbox | `allowing_multiple_genre_selection.md`, `filtering_with_multiple_genre_list.md` |
+| 14 | Service Behavior và Multi-tenancy | Behavior có sẵn (`[Unique]`, `IInsertLogRow`...), tự viết behavior, tách dữ liệu theo tenant | `tutorials/multi_tenancy/` |
+| 15 | Cấu hình, bundling, triển khai IIS | `appSettings`, migration trên production, bundling, publish, đọc lỗi | `howto/how_to_enable_script_bundling.md` |
+
+Thứ tự gợi ý: 09 → 13 dùng hằng ngày nên học trước; 14 và 15 cần khi bắt đầu đụng tới kiến trúc và deploy.
+
+Những phần **không** đưa vào khóa vì ít dùng hoặc thuộc bản trả phí: đăng nhập LDAP/Active Directory
+(`howto/how_to_authenticate_with_active_directory_or_ldap.md`), các database khác SQL Server
+(PostgreSQL, MySQL, Oracle) và các tính năng của StartSharp.
 
 ## Cách học mỗi bài
 

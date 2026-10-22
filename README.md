@@ -36,6 +36,13 @@ Xem [lessons/00-lo-trinh.md](lessons/00-lo-trinh.md).
 | 06 | [Nghiệp vụ trong Repository (Request Handler)](lessons/06-nghiep-vu-trong-repository.md) | ✅ |
 | 07 | [Phân quyền (Permission) và Navigation](lessons/07-phan-quyen-va-navigation.md) | ✅ |
 | 08 | [Master–detail và quan hệ nhiều–nhiều](lessons/08-master-detail.md) | ✅ |
+| 09 | [Đa ngôn ngữ (Localization)](lessons/09-da-ngon-ngu-localization.md) | ✅ |
+| 10 | [Cache: LocalCache, TwoLevelCache](lessons/10-cache.md) | ✅ |
+| 11 | [Upload file và ảnh](lessons/11-upload-file-va-anh.md) | ✅ |
+| 12 | [Báo cáo, xuất Excel/PDF và nhập từ Excel](lessons/12-bao-cao-xuat-excel-pdf.md) | ✅ |
+| 13 | [Tự viết Formatter, Editor và Filter](lessons/13-formatter-editor-filter-tu-viet.md) | ✅ |
+| 14 | [Service Behavior và Multi-tenancy](lessons/14-service-behavior-va-multi-tenancy.md) | ✅ |
+| 15 | [Cấu hình, bundling và triển khai lên IIS](lessons/15-cau-hinh-bundling-trien-khai-iis.md) | ✅ |
 
 ## Code mẫu và phân tích code
 
