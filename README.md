@@ -28,6 +28,7 @@ Xem [lessons/00-lo-trinh.md](lessons/00-lo-trinh.md).
 
 | # | Bài | Trạng thái |
 |---|---|---|
+| 00a | [Khởi tạo dự án 3.13.7 trong Visual Studio](lessons/00a-khoi-tao-du-an.md) | ✅ |
 | 01 | [Kiến trúc và cấu trúc một module](lessons/01-kien-truc-va-cau-truc-module.md) | ✅ |
 | 02 | [Tạo bảng bằng FluentMigrator](lessons/02-fluentmigrator.md) | ✅ |
 | 03 | [Sinh code bằng Sergen](lessons/03-sergen.md) | ✅ |

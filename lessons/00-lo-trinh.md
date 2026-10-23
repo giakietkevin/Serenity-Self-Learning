@@ -6,6 +6,7 @@ và một bài tập để tự làm trong project của mình.
 
 | # | Bài | Nội dung chính | Tham khảo trong Guide cũ |
 |---|---|---|---|
+| 00a | Khởi tạo dự án 3.13.7 trong Visual Studio | Cài VSIX Serene (ASP.NET MVC), nâng package lên 3.13.7, chạy lần đầu | `getting_started/` |
 | 01 | Kiến trúc và cấu trúc một module | Các lớp Row, Repository, Endpoint, Form, Columns, Grid, Dialog và luồng request | `serene_tour/`, `entities/`, `services/` |
 | 02 | Tạo bảng bằng FluentMigrator | Viết migration, đặt tên, chạy migration lúc app khởi động | `tutorials/movies/creating_movie_table.md` |
 | 03 | Sinh code bằng Sergen | Dùng Sergen để sinh code module từ bảng, hiểu từng file được sinh ra | `tutorials/movies/generating_code_for_movie_table.md`, `sergen/` |
