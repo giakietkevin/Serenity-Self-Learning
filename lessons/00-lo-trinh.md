@@ -28,6 +28,19 @@ và một bài tập để tự làm trong project của mình.
 | 14 | Service Behavior và Multi-tenancy | Behavior có sẵn (`[Unique]`, `IInsertLogRow`...), tự viết behavior, tách dữ liệu theo tenant | `tutorials/multi_tenancy/` |
 | 15 | Cấu hình, bundling, triển khai IIS | `appSettings`, migration trên production, bundling, publish, đọc lỗi | `howto/how_to_enable_script_bundling.md` |
 
+### Phần lý thuyết nền (bổ sung khi đối chiếu với mục *Framework Features* của Guide)
+
+| # | Bài | Nội dung chính | Tham khảo trong Guide cũ |
+|---|---|---|---|
+| 16 | Fluent SQL, connection và transaction | `SqlQuery` (join, group by, phân trang), Dapper, `SqlInsert`/`SqlUpdate`, `UnitOfWork`, `OnCommit` | `fluent_sql/`, `connections/` |
+| 17 | Row chuyên sâu | Field, `FieldFlags`, table/view field, theo dõi gán giá trị, `SelectLevel`, quyền theo field | `entities/` |
+| 18 | Tự viết service không phải CRUD | Request/Response, cách framework mở connection/transaction, `ValidationError`, `Q.serviceCall` | `services/` |
+| 19 | Widget và vòng đời Dialog | Cây kế thừa widget, template HTML, thứ tự hàm khi nạp/lưu, grid con trong tab | `widgets/`, `listing_movies_in_person_dialog.md` |
+| 20 | Grid nâng cao | Vòng đời tải dữ liệu, lưu cài đặt grid, chọn cột, nhóm dòng, dạng cây, sửa trên grid | `grids/` |
+| 21 | Kiến trúc nền và xác thực | Khởi động app, `Dependency`, 4 service xác thực/phân quyền, impersonate | `service_locator/`, `authentication/` |
+
+Thứ tự gợi ý cho phần này: 18 → 19 → 16 → 17 → 20 → 21.
+
 Thứ tự gợi ý: 09 → 13 dùng hằng ngày nên học trước; 14 và 15 cần khi bắt đầu đụng tới kiến trúc và deploy.
 
 Những phần **không** đưa vào khóa vì ít dùng hoặc thuộc bản trả phí: đăng nhập LDAP/Active Directory

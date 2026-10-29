@@ -44,6 +44,12 @@ Xem [lessons/00-lo-trinh.md](lessons/00-lo-trinh.md).
 | 13 | [Tự viết Formatter, Editor và Filter](lessons/13-formatter-editor-filter-tu-viet.md) | ✅ |
 | 14 | [Service Behavior và Multi-tenancy](lessons/14-service-behavior-va-multi-tenancy.md) | ✅ |
 | 15 | [Cấu hình, bundling và triển khai lên IIS](lessons/15-cau-hinh-bundling-trien-khai-iis.md) | ✅ |
+| 16 | [Fluent SQL, connection và transaction](lessons/16-fluent-sql-va-transaction.md) | ✅ |
+| 17 | [Row chuyên sâu](lessons/17-row-chuyen-sau.md) | ✅ |
+| 18 | [Tự viết service không phải CRUD](lessons/18-service-tu-viet.md) | ✅ |
+| 19 | [Widget và vòng đời Dialog](lessons/19-widget-va-vong-doi-dialog.md) | ✅ |
+| 20 | [Grid nâng cao](lessons/20-grid-nang-cao.md) | ✅ |
+| 21 | [Kiến trúc nền và xác thực](lessons/21-kien-truc-nen-va-xac-thuc.md) | ✅ |
 
 ## Code mẫu và phân tích code
 
