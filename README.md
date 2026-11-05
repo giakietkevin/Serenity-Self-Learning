@@ -50,6 +50,10 @@ Xem [lessons/00-lo-trinh.md](lessons/00-lo-trinh.md).
 | 19 | [Widget và vòng đời Dialog](lessons/19-widget-va-vong-doi-dialog.md) | ✅ |
 | 20 | [Grid nâng cao](lessons/20-grid-nang-cao.md) | ✅ |
 | 21 | [Kiến trúc nền và xác thực](lessons/21-kien-truc-nen-va-xac-thuc.md) | ✅ |
+| 22 | [Tài khoản người dùng và email](lessons/22-tai-khoan-va-email.md) | ✅ |
+| 23 | [Sổ tay các mẫu BasicSamples còn lại](lessons/23-so-tay-mau-basicsamples.md) | ✅ |
+| 24 | [Thư viện JS ngoài và biểu đồ](lessons/24-thu-vien-js-ngoai-va-bieu-do.md) | ✅ |
+| 25 | [Gỡ lỗi và sự cố thường gặp](lessons/25-go-loi-va-su-co-thuong-gap.md) | ✅ |
 
 ## Code mẫu và phân tích code
 

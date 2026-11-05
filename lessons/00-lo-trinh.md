@@ -41,6 +41,17 @@ và một bài tập để tự làm trong project của mình.
 
 Thứ tự gợi ý cho phần này: 18 → 19 → 16 → 17 → 20 → 21.
 
+### Phần bổ sung lần 2 (rà soát How-to, FAQ của Guide và các mẫu trong Serene)
+
+| # | Bài | Nội dung chính | Tham khảo |
+|---|---|---|---|
+| 22 | Tài khoản người dùng và email | Đăng ký, kích hoạt, quên/đặt lại/đổi mật khẩu, token `MachineKey`, cấu hình SMTP, Recaptcha | `Membership/Account/`, `howto/how_to_use_recaptcha.md` |
+| 23 | Sổ tay các mẫu BasicSamples còn lại | Hộp thoại, clone, giá trị mặc định, form khác trong tab, lookup tùy biến, nút trong ô, menu động | `Modules/BasicSamples/` |
+| 24 | Thư viện JS ngoài và biểu đồ | Nạp script theo trang/bundle, typings, biểu đồ trong dialog, trang dashboard, bọc plugin thành editor | `howto/how_to_use_a_third_party_plugin_with_serenity.md`, `ChartInDialog` |
+| 25 | Gỡ lỗi và sự cố thường gặp | Tìm lỗi theo tầng, log SQL, debug vào mã nguồn Serenity, bảng tra lỗi | `howto/how_to_debugging_with_serenity_sources.md`, `faq/` |
+
+Bài 25 nên đọc sớm (ngay sau bài 08) và quay lại tra khi gặp lỗi. Bài 22–24 học khi cần.
+
 Thứ tự gợi ý: 09 → 13 dùng hằng ngày nên học trước; 14 và 15 cần khi bắt đầu đụng tới kiến trúc và deploy.
 
 Những phần **không** đưa vào khóa vì ít dùng hoặc thuộc bản trả phí: đăng nhập LDAP/Active Directory
